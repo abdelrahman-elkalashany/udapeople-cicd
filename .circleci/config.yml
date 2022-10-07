@@ -309,7 +309,7 @@ jobs:
             
   notify_on_success:
     docker:
-      - image: cimag/base:stable
+      - image: cimg/base:stable
     steps:
       - checkout
       - slack/notify:
