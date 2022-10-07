@@ -311,7 +311,6 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - checkout
       - slack/notify:
           event: pass
           channel: cicd-pipeline
