@@ -309,7 +309,7 @@ jobs:
             
   notify_on_success:
     docker:
-      - image: cimag/base:2022.10
+      - image: cimag/base
     steps:
       - checkout
       - slack/notify:
