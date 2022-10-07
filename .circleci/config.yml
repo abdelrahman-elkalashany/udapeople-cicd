@@ -311,6 +311,7 @@ jobs:
     docker:
       - image: cimag/base:2022.10
     steps:
+      - checkout
       - slack/notify:
           event: pass
           channel: cicd-pipeline
