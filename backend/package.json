@@ -113,5 +113,9 @@
     ],
     "testEnvironment": "node",
     "verbose": false
+  },
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
   }
 }
