@@ -205,7 +205,8 @@ jobs:
           paths:
             - project/.circleci/ansible/inventory.txt
 
-      - destroy-environment
+      - destroy-environment:
+          name: destroy environment
 
 #   configure-infrastructure:
 #     docker:
