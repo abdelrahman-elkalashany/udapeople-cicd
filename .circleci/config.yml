@@ -4,7 +4,6 @@ orbs:
   slack: circleci/slack@4.10.1
 
 commands:
-
   notify_on_failure:
     steps:
       - slack/notify:
@@ -162,7 +161,7 @@ jobs:
              npm audit fix --force --audit-level=critical
              npm audit fix --force --audit-level=critical
              npm audit --audit-level=critical
-      - notify_on_failure             
+      - notify_on_failure
 
   deploy-infrastructure:
     docker:
