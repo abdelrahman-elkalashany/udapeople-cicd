@@ -385,6 +385,9 @@ workflows:
             - test-backend
             - scan-backend
             - scan-frontend
+          filters:
+            branches:
+              only: [master]
 
       # - configure-infrastructure:
       #     requires: [deploy-infrastructure]
