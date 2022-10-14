@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible.json#/$defs/playbook": "file:///home/abdelrahman/Desktop/udacity-project3/udapeople-cicd/.circleci/ansible/configure-server.yml",
+        "https://raw.githubusercontent.com/ansible/schemas/main/f/ansible.json#/$defs/tasks": "file:///home/abdelrahman/Desktop/udacity-project3/udapeople-cicd/.circleci/ansible/roles/configure-server/main.yml"
+    }
+}
