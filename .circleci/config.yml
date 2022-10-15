@@ -52,7 +52,7 @@ commands:
           command: |
             SUCCESS=$(curl --insecure https://kvdb.io/${KVDB_BUCKET}/migration_${CIRCLE_WORKFLOW_ID:0:7})
             echo $SUCCESS
-            if (( $SUCCESS == 1 )); 
+            if (( $SUCCESS == "Not Found" )); 
             then
               cd ~/project/backend
               npm install
