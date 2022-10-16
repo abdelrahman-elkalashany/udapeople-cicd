@@ -323,7 +323,7 @@ jobs:
             cd .circleci/ansible
             cat inventory.txt
             ansible-playbook -i inventory.txt deploy-backend.yml
-            curl http://54.147.240.74:3030/api/status
+            curl http://${BACKEND_PUBLIC_IP}:3030/api/status
       - destroy-environment
       - revert-migrations
 
