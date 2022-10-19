@@ -57,7 +57,7 @@ function bootstrap() {
             },
         };
         // app.use(cors(corsOptions));
-        app.use(cors({  "origin": ["*"], "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS"}));
+        app.use(cors({ "origin": ["*"], "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS"}));
         app.useGlobalFilters(new error_filter_1.ErrorFilter());
         yield app.listen(config.PORT);
         logger.log(`Listening on port ${config.PORT}.`);
