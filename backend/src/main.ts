@@ -50,5 +50,4 @@ async function bootstrap() {
   await app.listen(config.PORT);
   logger.log(`Listening on port ${config.PORT}.`);
 }
-
 bootstrap();
