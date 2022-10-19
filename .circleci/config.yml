@@ -314,7 +314,7 @@ jobs:
             echo VERSION=1 >> .env
             echo TYPEORM_CONNECTION=postgres >> .env
             echo TYPEORM_MIGRATIONS_DIR=./migrations >> .env
-            echo 'TYPEORM_ENTITIES=./modules/domain/**/*.entity{.ts,.js}'' >> .env
+            echo 'TYPEORM_ENTITIES=./modules/domain/**/*.entity{.ts,.js}' >> .env
             echo TYPEORM_MIGRATIONS=./migrations/*.ts >> .env
             echo TYPEORM_HOST= udapeople-db.couom3z36emh.us-east-1.rds.amazonaws.com >> .env
             echo TYPEORM_PORT= 5432 >> .env
